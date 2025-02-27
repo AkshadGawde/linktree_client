@@ -20,7 +20,7 @@ const ProfilePreview = () => {
     const fetchUserProfile = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8000/api/users/profile",
+          "https://linktree-api-apgp.onrender.com/api/users/profile",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -84,7 +84,7 @@ const ProfilePreview = () => {
               <img
                 src={
                   userProfile.profilePicture
-                    ? `http://localhost:8000/${userProfile.profilePicture}`
+                    ? `https://linktree-api-apgp.onrender.com/${userProfile.profilePicture}`
                     : userAvatar
                 }
                 alt="Profile"

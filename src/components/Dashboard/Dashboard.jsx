@@ -56,7 +56,7 @@ const Dashboard = () => {
   };
 
   const copyReferralLink = () => {
-    const referralLink = `http://localhost:3000/register?ref=${user?.referralCode}`;
+    const referralLink = `https://linktree-api-apgp.onrender.com/register?ref=${user?.referralCode}`;
     navigator.clipboard.writeText(referralLink);
     toast.success("Referral link copied!");
   };
@@ -94,7 +94,7 @@ const Dashboard = () => {
         <div className="flex items-center gap-2 mt-4">
           <input
             type="text"
-            value={`http://localhost:3000/register?ref=${user?.referralCode}`}
+            value={`https://linktree-api-apgp.onrender.com/register?ref=${user?.referralCode}`}
             readOnly
             className="border p-2 w-full rounded-md text-gray-600"
           />
