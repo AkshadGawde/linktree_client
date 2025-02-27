@@ -21,7 +21,6 @@ function App() {
   return (
     <AuthProvider>
       {" "}
-      {/* ✅ AuthProvider inside Router */}
       <Router>
         <Routes>
           <Route path="/" element={<Login />} />
