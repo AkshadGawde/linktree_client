@@ -20,7 +20,7 @@ const ReferralStats = () => {
         }
 
         const response = await axios.get(
-          "http://localhost:8000/api/referrals/stats",
+          "https://linktree-api-apgp.onrender.com/api/referrals/stats",
           {
             headers: {
               Authorization: `Bearer ${token}`,
