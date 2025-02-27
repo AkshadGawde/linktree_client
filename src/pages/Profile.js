@@ -40,7 +40,7 @@ const ProfilePreview = () => {
   }, [token]);
 
   const handleLinkShare = () => {
-    const shareLink = `http://localhost:3000/users/${userProfile.username}`;
+    const shareLink = `https://linktree-api-apgp.onrender.com/users/${userProfile.username}`;
     navigator.clipboard.writeText(shareLink);
     showSuccessToast(`Sharing link is copied: ${shareLink}`);
   };
